@@ -1,8 +1,14 @@
 class NumberUtil:
 
-    def add(self , num1 , num2):
-        return num1+num2
+    @staticmethod
+    def additionoftwonumbers(num1, num2):
+        return num1 + num2
+
+    @staticmethod
+    def subtractionoftwonumbers(num1, num2):
+        return num1 - num2
 
 
-obj = NumberUtil()
-print(obj.add(10, 20))
+if __name__ == '__main__':
+    print(NumberUtil.additionoftwonumbers(10, 20))
+    print(NumberUtil.subtractionoftwonumbers(10, 20))
